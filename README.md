@@ -20,7 +20,7 @@ Certifique-se de ter o Python instalado. As seguintes bibliotecas são necessár
 
 1.  Clone o repositório:
     ```bash
-    git clone [https://github.com/SeuUsuario/SeuRepositorio.git](https://github.com/SeuUsuario/SeuRepositorio.git)
+    git clone https://github.com/andremonteirodaniel/-Email-Finder.git
     cd SeuRepositorio
     ```
 2.  Instale as dependências:
