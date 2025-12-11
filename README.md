@@ -34,4 +34,3 @@ Execute o script fornecendo a URL inicial como argumento de linha de comando.
 
 ```bash
 python email_finder.py <URL_DE_PARTIDA>
-# Exemplo: python email_finder.py [http://exemplo.com](http://exemplo.com)
