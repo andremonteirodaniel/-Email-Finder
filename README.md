@@ -34,3 +34,9 @@ Execute o script fornecendo a URL inicial como argumento de linha de comando.
 
 ```bash
 python email_finder.py <URL_DE_PARTIDA>
+
+#### **Detalhes Técnicos Importantes**
+
+* Utiliza a biblioteca `requests` para fazer requisições HTTP.
+* Utiliza `BeautifulSoup` para analisar o HTML e extrair *tags* de link (`<a>`).
+* A expressão regular usada para e-mails é: `r"\w[\w\.]+\w@\w[\w\.]+\w"`.
