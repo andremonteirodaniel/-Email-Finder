@@ -21,7 +21,7 @@ Certifique-se de ter o Python instalado. As seguintes bibliotecas são necessár
 1.  Clone o repositório:
     ```bash
     git clone https://github.com/andremonteirodaniel/-Email-Finder.git
-    cd SeuRepositorio
+    cd -Email-Finder
     ```
 2.  Instale as dependências:
     ```bash
