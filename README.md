@@ -1,42 +1,50 @@
-# -Email-Finder
-# 📧 Email Finder (Web Crawler)
+Email-Finder
 
-Uma ferramenta simples em Python que rastreia uma URL de partida, segue links internos e externos recursivamente, e extrai endereços de e-mail válidos encontrados nas páginas HTML. Útil para coleta de informações (OSINT) e testes de segurança.
+Email Finder (Web Crawler)
 
-## ✨ Funcionalidades
+A simple Python tool that crawls a starting URL, recursively follows internal and external links, and extracts valid email addresses found on HTML pages. Useful for intelligence gathering (OSINT) and security testing.
 
-* **Rastreamento Recursivo:** Inicia em uma URL e segue todos os links encontrados que não foram rastreados anteriormente.
-* **Extração de E-mails:** Utiliza expressões regulares para identificar e-mails no formato padrão.
-* **Controle de Visitas:** Mantém um registro de URLs já rastreadas para evitar loops e repetições desnecessárias.
+Features
 
-## ⚙️ Pré-requisitos
+Recursive Crawling: Starts at a URL and follows all found links that have not been crawled previously.
+Email Extraction: Uses regular expressions to identify emails in standard format.
+Visitor Control: Keeps a record of already crawled URLs to avoid unnecessary loops and repetitions.
 
-Certifique-se de ter o Python instalado. As seguintes bibliotecas são necessárias:
+Prerequisites
 
-* `requests`
-* `beautifulsoup4`
+Make sure you have Python installed. The following libraries are required:
 
-## 📦 Instalação
+ `requests`
+ `beautifulsoup4`
 
-1.  Clone o repositório:
-    ```bash
-    git clone https://github.com/andremonteirodaniel/-Email-Finder.git
-    cd -Email-Finder
-    ```
-2.  Instale as dependências:
-    ```bash
-    pip install -r requirements.txt
-    ```
+Installation
 
-## 🚀 Uso
+1. Clone the repository:
 
-Execute o script fornecendo a URL inicial como argumento de linha de comando.
+``bash
+git clone https://github.com/andremonteirodaniel/-Email-Finder.git
 
-```bash
-python email_finder.py <URL_DE_PARTIDA>
+cd -Email-Finder
 
-#### **Detalhes Técnicos Importantes**
+``
+2. Install the dependencies:
 
-* Utiliza a biblioteca `requests` para fazer requisições HTTP.
-* Utiliza `BeautifulSoup` para analisar o HTML e extrair *tags* de link (`<a>`).
-* A expressão regular usada para e-mails é: `r"\w[\w\.]+\w@\w[\w\.]+\w"`.
+``bash
+pip install -r requirements.txt
+
+```
+
+Usage
+
+Run the script providing the starting URL as a command-line argument.
+
+``bash
+python email_finder.py <STARTING_URL>
+
+    Important Technical Details
+
+  Uses the `requests` library to make HTTP requests.
+
+ Uses `BeautifulSoup` to parse HTML and extract * link tags (`<a>`).
+
+The regular expression used for emails is: `r"\w[\w\.]+\w@\w[\w\.]+\w"`.
